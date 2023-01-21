@@ -1,0 +1,157 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  text-align: right;
+  padding: 20px 10px;
+}
+
+.nav-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  border-radius: 50%;
+  outline: none;
+  padding: 8px;
+}
+
+.nav-icon:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+.nav-link {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 0.875rem;
+}
+
+.nav-button {
+  background: #1a73e8;
+  color: white;
+  border: 1px solid transparent;
+  margin-left: 8px;
+  padding: 9px 23px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background: #2b7de9;
+  box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+    0 1px 2px 0 rgba(60, 64, 67, 0.3);
+}
+
+.google-logo {
+  padding: 10px 0;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+  padding: 50px;
+}
+
+.search-box {
+  width: 60vw;
+  height: 45px;
+  border: 1px solid lightgray;
+  border-radius: 23px;
+  display: flex;
+  align-items: stretch;
+}
+
+.search-input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  flex-grow: 1;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #9aa0a6;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.google-mic {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.button {
+  width: 140px;
+  height: 34px;
+  border-radius: 4px;
+  border: none;
+  margin: 11px 4px;
+  background-color: #f8f9fa;
+  color: #3c4043;
+  font-size: 0.875rem;
+}
+
+.button:hover {
+  border: 1px solid #dadce0;
+}
+
+.languages {
+  color: #4d5156;
+  font-size: 0.8125rem;
+}
+
+.language-item {
+  text-decoration: none;
+  padding: 0 3px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  font-size: 0.9375;
+}
+
+footer .row {
+  padding: 15px 30px;
+  color: #70757a;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  border-bottom: 1px solid #dadce0;
+}
+
+.info {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
